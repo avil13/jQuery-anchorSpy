@@ -5,7 +5,7 @@ jQuery plugin to active menu item on scroll
 
 
 ##Example##
-** HTML **
+**HTML**
 
 ```html
 <ul class="menu ease">
