@@ -1,9 +1,11 @@
 jQuery(document).ready(function($) {
 
-    $('.menu').anchorSpy({
-        margin: 50,
-        speed: 400
-    });
+    var Spy = $('.menu').anchorSpy({
+            margin: 50,
+            speed: 1000,
+            next: '.next',
+            prev: '.prev'
+        });
 
 
 });

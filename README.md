@@ -18,25 +18,48 @@ jQuery plugin to active menu item on scroll
     <a name="menu"></a>
     Lorem ipsum dolor ...
 </div>
+...
 
 ```
 
 **JS**
 
-```js 
+```js
 var Spy = $('.menu').anchorSpy({
-    margin: 50,
-    speed:1000
-});
+        margin: 50,
+        speed: 1000,
+        next: '.next',
+        prev: '.prev'
+    });
 
 ```
 
-if you nead reload method, then use ```reload()```
+If you nead reload, then use ```reload()```
 
 ```js
 Spy.reload();
 
 ```
+
+
+If you nead go to the next or previous block then use ``` next() ``` or ``` prev() ``` method.
+
+```js
+Spy.next();
+
+Spy.prev();
+
+```
+
+**Options**
+
+
+| option | default | Nead |
+|-----------------|----------------:|-------------:|
+|margin | 50  Integer|
+|speed | 1000  Integer|
+|next | false | DOM selector|
+|prev  | false  | DOM selector|
 
 
 *Thanks for idea, Novikov Maksim*
