@@ -31,4 +31,4 @@ $('.menu').anchorSpy({
 
 
 
-*Thans for idea, Novikov Maksim*
+*Thanks for idea, Novikov Maksim*
