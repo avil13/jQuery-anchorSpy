@@ -4,7 +4,8 @@ jQuery(document).ready(function($) {
             margin: 50,
             speed: 1000,
             next: '.next',
-            prev: '.prev'
+            prev: '.prev',
+            active_class: 'active'
         });
 
 

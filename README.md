@@ -60,6 +60,7 @@ Spy.prev();
 |speed | 1000  | Integer|
 |next | false | DOM selector|
 |prev  | false  | DOM selector|
+|active_class  | 'active'  | string active class name |
 
 
 * * *
