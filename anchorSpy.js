@@ -8,7 +8,6 @@
         $this = this;
 
         var settings = $.extend({
-            menu: '.menu',
             margin: 50
         }, options);
 
@@ -61,7 +60,7 @@
 
 
             // обрабатываем нажатие локальных ссылок
-            $a_list.click(function() {
+            $a_list.off('click').click(function() {
                 var name = $(this).attr('href');
                 name = name.substr(1);
 
