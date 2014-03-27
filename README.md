@@ -28,3 +28,7 @@ $('.menu').anchorSpy({
     margin: 50
 });
 ```
+
+
+
+*Thans for idea, Novikov Maksim*
