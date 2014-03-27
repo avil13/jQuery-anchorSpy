@@ -56,10 +56,12 @@ Spy.prev();
 
 | option | default | Nead |
 |-----------------|----------------:|-------------:|
-|margin | 50  Integer|
-|speed | 1000  Integer|
+|margin | 50  | Integer|
+|speed | 1000  | Integer|
 |next | false | DOM selector|
 |prev  | false  | DOM selector|
+
+
 
 
 *Thanks for idea, Novikov Maksim*
