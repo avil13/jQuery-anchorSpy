@@ -61,7 +61,7 @@ Spy.prev();
 |next | false | DOM selector|
 |prev  | false  | DOM selector|
 |active_class  | 'active'  | string active class name |
-
+|active_parent | true | boolean, determines which element add active class |
 
 * * *
 

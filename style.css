@@ -5,6 +5,7 @@ body{background-color: #292929; color: #E9E9E9; padding:100px 300px;}
 hr{margin:30px 10px; }
 
 a{color: #42A8B2; }
+a.active{ font-style:italic; color:#F03407; text-shadow: 0 0 2px #120D7A;}
 
 .ease, .ease *{-webkit-transition: all 300ms ease-in-out; -moz-transition: all 300ms ease-in-out; -ms-transition: all 300ms ease-in-out; -o-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; }
 

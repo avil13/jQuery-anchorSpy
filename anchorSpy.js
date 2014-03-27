@@ -16,8 +16,8 @@ https://github.com/avil13/jQuery-anchorSpy.js
             speed: 1000,
             next: false,
             prev: false,
-            active_class: 'active'
-
+            active_class: 'active',
+            active_parent: true
         }, options);
 
 
@@ -26,8 +26,13 @@ https://github.com/avil13/jQuery-anchorSpy.js
         var reActive = function(name) {
             if (name === nowActive || name === undefined) return false;
 
-            $this.find('a').parent().removeClass(settings.active_class);
-            $this.find('a[href=#' + name + ']').parent().addClass(settings.active_class);
+            if (settings.active_parent) {
+                $this.find('a').parent().removeClass(settings.active_class);
+                $this.find('a[href=#' + name + ']').parent().addClass(settings.active_class);
+            } else {
+                $this.find('a').removeClass(settings.active_class);
+                $this.find('a[href=#' + name + ']').addClass(settings.active_class);
+            }
             nowActive = name;
         };
 

@@ -5,7 +5,8 @@ jQuery(document).ready(function($) {
             speed: 1000,
             next: '.next',
             prev: '.prev',
-            active_class: 'active'
+            active_class: 'active',
+            active_parent: false
         });
 
 
