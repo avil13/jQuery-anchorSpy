@@ -54,7 +54,7 @@ Spy.prev();
 **Options**
 
 
-| option | default | Nead |
+| option | default | needs |
 |-----------------|----------------:|-------------:|
 |margin | 50  | Integer|
 |speed | 1000  | Integer|
