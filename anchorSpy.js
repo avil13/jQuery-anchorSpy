@@ -1,5 +1,5 @@
 /**
-anchorSpy 0.2
+anchorSpy 0.3
 https://github.com/avil13/jQuery-anchorSpy.js
 */
 (function($) {
