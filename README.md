@@ -24,11 +24,19 @@ jQuery plugin to active menu item on scroll
 **JS**
 
 ```js 
-$('.menu').anchorSpy({
-    margin: 50
+var Spy = $('.menu').anchorSpy({
+    margin: 50,
+    speed:1000
 });
+
 ```
 
+if you nead reload method, then use ```reload()```
+
+```js
+Spy.reload();
+
+```
 
 
 *Thanks for idea, Novikov Maksim*
