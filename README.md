@@ -62,6 +62,6 @@ Spy.prev();
 |prev  | false  | DOM selector|
 
 
-
+* * *
 
 *Thanks for idea, Novikov Maksim*
