@@ -131,7 +131,7 @@ https://github.com/avil13/jQuery-anchorSpy.js
 
 
                 $(window).scroll(function() {
-                    var wst = $(window).scrollTop() + settings.margin;
+                    var wst = $(window).scrollTop() + settings.margin + 1;
 
                     $.each(blocks, function(n, v) {
                         if (v.top <= wst && v.bottom > wst) {
