@@ -1,5 +1,5 @@
 /**
-anchorSpy 0.3
+anchorSpy 0.4
 https://github.com/avil13/jQuery-anchorSpy.js
 */
 (function($) {
@@ -129,8 +129,7 @@ https://github.com/avil13/jQuery-anchorSpy.js
                 }
 
 
-
-                $(window).scroll(function() {
+                var actionOnScroll = function() {
                     var wst = $(window).scrollTop() + settings.margin + 1;
 
                     $.each(blocks, function(n, v) {
@@ -138,7 +137,14 @@ https://github.com/avil13/jQuery-anchorSpy.js
                             reActive(n);
                         }
                     });
+                };
+
+
+                $(document).scroll(actionOnScroll);
+                $(document).on({
+                    'touchmove': actionOnScroll()
                 });
+
 
                 // обрабатываем нажатие локальных ссылок
                 $(a_list_checked).off('click').click(function() {
