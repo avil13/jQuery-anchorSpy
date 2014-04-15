@@ -9,7 +9,7 @@ https://github.com/avil13/jQuery-anchorSpy.js
             return ("error");
         }
 
-        $this = this;
+        var $this = this;
 
         var settings = $.extend({
             margin: 50,
