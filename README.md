@@ -4,6 +4,7 @@ jQuery-anchorSpy.js
 jQuery plugin to active menu item on scroll
 
 [Demo](http://avil13.github.io/demo/anchorSpy/ "demo")
+===
 
 ##Example##
 **HTML**
