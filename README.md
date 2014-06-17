@@ -65,6 +65,12 @@ Spy.prev();
 |active_class  | 'active'  | string active class name |
 |active_parent | true | boolean, determines which element add active class |
 
+
+* * *
+__ToDo:__
+* При ресайзе менять координаты
+* Добавить твики плавной прокрутки
+
 * * *
 
 *Thanks for idea, Novikov Maksim*
