@@ -1,5 +1,5 @@
 /**
-anchorSpy 0.4
+anchorSpy 0.5
 https://github.com/avil13/jQuery-anchorSpy.js
 */
 (function($) {
@@ -41,6 +41,7 @@ https://github.com/avil13/jQuery-anchorSpy.js
                 a_list_checked = [],
                 blocks = {};
 
+
             // собираем список локальных ссылок
             $.each($a_list, function(i, j) {
                 var $a = $(j),
@@ -68,6 +69,7 @@ https://github.com/avil13/jQuery-anchorSpy.js
                 var ScrollTo = function(name) {
                     if (name === undefined)
                         return false;
+
                     $('html, body').stop().animate({
                         scrollTop: blocks[name].top - settings.margin
                     }, settings.speed);
@@ -162,6 +164,10 @@ https://github.com/avil13/jQuery-anchorSpy.js
         }; // End reload
 
         $this.reload();
+
+        $(window).resize(function() {
+            $this.reload();
+        });
 
 
         return $this;
