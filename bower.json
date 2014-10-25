@@ -1,7 +1,7 @@
 {
-  "name": "anchorSpy",
+  "name": "anchor-spy",
   "version": "0.5.0",
-  "homepage": "https://github.com/avil13/jQuery-anchorSpy.js",
+  "homepage": "https://github.com/avil13/jQuery-anchorSpy",
   "authors": [
     "avil13 <13.avil@gmail.com>"
   ],
