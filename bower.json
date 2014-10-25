@@ -1,0 +1,26 @@
+{
+  "name": "anchorSpy",
+  "version": "0.5.0",
+  "homepage": "https://github.com/avil13/jQuery-anchorSpy.js",
+  "authors": [
+    "avil13 <13.avil@gmail.com>"
+  ],
+  "description": "scrollig to element on page",
+  "main": "anchorSpy.js",
+  "keywords": [
+    "anchor",
+    "scroll",
+    "link",
+    "point",
+    "jquery",
+    "plugin"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
