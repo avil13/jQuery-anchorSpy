@@ -1,6 +1,6 @@
 /**
 anchorSpy 0.5
-https://github.com/avil13/jQuery-anchorSpy.js
+https://github.com/avil13/jQuery-anchorSpy
 */
 (function($) {
     $.fn.anchorSpy = function(options) {
