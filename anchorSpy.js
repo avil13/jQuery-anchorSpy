@@ -50,7 +50,7 @@ https://github.com/avil13/jQuery-anchorSpy
                     name = href.substr(1);
 
                 if (href.substr(0, 1) === '#') {
-                    $aName = $('a[name=' + name + ']');
+                    $aName = $('a[name=' + name + '], #' + name);
 
                     if ($aName.length) {
                         blocks[name] = {

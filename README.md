@@ -11,7 +11,7 @@ jQuery plugin to active menu item on scroll
 
 ```html
 <ul class="menu ease">
-    <li><a href="#menu">menu</a></li>
+    <li><div id="menu">menu</div></li>
     <li><a href="#faq">faq</a></li>
     <li><a href="#list">list</a></li>
 </ul>
