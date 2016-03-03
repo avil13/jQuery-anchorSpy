@@ -17,8 +17,26 @@ https://github.com/avil13/jQuery-anchorSpy
             next: false,
             prev: false,
             active_class: 'active',
-            active_parent: true
+            active_parent: true,
+            time_interval: 150 
         }, options);
+
+        // Для вызова функции не чаще чем в указанный интервал времени
+        var my_debounce = function(func, wait) {
+            var timeout;
+            return function() {
+                var context = this,
+                    args = arguments,
+                    later = function() {
+                        timeout = null;
+                        func.apply(context, args);
+                    };
+                if (!timeout) {
+                    timeout = setTimeout(later, wait);
+                }
+                return timeout;
+            };
+        };
 
 
         var nowActive = '';
@@ -131,7 +149,7 @@ https://github.com/avil13/jQuery-anchorSpy
                 }
 
 
-                var actionOnScroll = function() {
+                var actionOnScroll = my_debounce(function() {
                     var wst = $(window).scrollTop() + settings.margin + 1;
 
                     $.each(blocks, function(n, v) {
@@ -139,9 +157,9 @@ https://github.com/avil13/jQuery-anchorSpy
                             reActive(n);
                         }
                     });
-                };
+                }, settings.time_interval);
 
-
+                // скролим
                 $(document).scroll(actionOnScroll);
                 $(document).on({
                     'touchmove': actionOnScroll()

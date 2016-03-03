@@ -1,0 +1,34 @@
+{
+    "name": "jq-anchor_spy",
+    "version": "1.0.0",
+    "description": "scrollig to element on page",
+    "main": "anchorSpy.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "make": "uglifyjs --lint --compress --output anchorSpy.min.js -- anchorSpy.js",
+        "start": "http-server -d ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/avil13/jQuery-anchorSpy.git"
+    },
+    "keywords": [
+        "anchor",
+        "scroll",
+        "link",
+        "point",
+        "jquery",
+        "plugin"
+    ],
+    "author": "avil13",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/avil13/jQuery-anchorSpy/issues"
+    },
+    "homepage": "https://github.com/avil13/jQuery-anchorSpy#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "uglifyjs": "^2.4.10",
+        "http-server": "^0.9.0"
+    }
+}

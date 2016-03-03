@@ -66,6 +66,10 @@ Spy.prev();
 |active_parent | true | boolean, determines which element add active class |
 
 
+
+* * *
+Для теста выполнить в репозитории `npm install` и затем `npm start`
+
 * * *
 __ToDo:__
 * Добавить твики плавной прокрутки
