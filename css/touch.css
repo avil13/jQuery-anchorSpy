@@ -1,0 +1,7 @@
+.social-box:hover .social-text {
+  display:block;
+}
+
+.social-box:hover .social-btns a {
+  display:none;
+}
